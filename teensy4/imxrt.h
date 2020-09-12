@@ -7693,6 +7693,7 @@ typedef struct
 #define I2S_RCSR_FR			((uint32_t)0x02000000)	// FIFO Reset
 #define I2S_RCSR_FRDE			((uint32_t)0x00000001)	// FIFO Request DMA Enable
 #define I2S_RCSR_BCE			((uint32_t)0x10000000)	// Bit Clock Enable
+#define I2S_RCSR_FRF			((uint32_t)0x00010000)	// FIFO Request Flag
 #define I2S_TCR1_RFW(n)			((uint32_t)n & 0x1f)	// Receive FIFO watermark
 #define I2S_TCR2_DIV(n)			((uint32_t)n & 0xff)	// Bit clock divide by (DIV+1)*2
 #define I2S_TCR2_BCD			((uint32_t)1<<24)	// Bit clock direction
@@ -7717,6 +7718,7 @@ typedef struct
 #define I2S_TCSR_BCE			((uint32_t)0x10000000)	// Bit Clock Enable
 #define I2S_TCSR_FR			((uint32_t)0x02000000)	// FIFO Reset
 #define I2S_TCSR_FRDE			((uint32_t)0x00000001)	// FIFO Request DMA Enable
+#define I2S_TCSR_FRF			((uint32_t)0x00010000)	// FIFO Request Flag
 
 
 
